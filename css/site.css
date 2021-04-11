@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    background-color: #338cd5;
+}
+
+.wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: white;
+}
+
+#popup {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: #338cd5;
+    font-size: 80px;
+    font-weight: 800;
+    display: none;
+}
+
+.panel {
+    z-index: 2;
+    position: relative;
+}
+
+.panel > * {
+    display: inline-block;
+}
+
+.panel #restartGameBtn {
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+}
+
+#board {
+    z-index: 2;
+    padding: 0 50px 0 50px;
+}
+
+.logo {
+    color: #338cd5;
+    font-size: 50px;
+    font-weight: 800;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.tile-Wall {
+    background-image: url("../pics/wall.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tile-Space {
+    background-color: white;
+}
+
+.tile-Goal {
+    background-image: url("../pics/goal.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.entity-block {
+    background-image: url("../pics/crate.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.entity-block-goal {
+    background-image: url("../pics/crate.png"), url("../pics/goal.jpg");
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+}
+
+.entity-player {
+    background-image: url("../pics/worker.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.entity-player-goal {
+    background-image: url("../pics/worker.png"), url("../pics/goal.jpg");
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+}
